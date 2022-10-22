@@ -1,0 +1,889 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    color: #fff;
+}
+body{
+    font-family: 'lato', sans-serif;
+    overflow-x: auto; 
+    
+ 
+    
+
+}
+.lo img{
+    
+    width: 35%;
+   
+    
+}
+.lo{
+    display: flex;
+    margin-top: 3em;
+    margin-left: 2em; 
+}
+
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.window-scroll{
+    background-image: linear-gradient(  rgb(33, 66, 233), rgb(37, 14, 138));
+    box-shadow: 0 1rem 4rem rgba(0,0,0,0.2);
+    
+    
+    
+}
+
+
+
+
+
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    background-image: url("header-bg.svg");
+    width: 100%;
+    z-index: 999;
+    
+}
+.logo img{
+    width: 50%;
+    margin: 1.5em;
+    
+}
+.close{
+    width: 100%;
+}
+.menu{
+    width: 10%;
+    margin: 26px;
+}
+h1,
+h2,
+h3{
+    color:rgb(44, 44, 49);
+    
+}
+
+
+/* NAV */
+
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgb(86, 89, 255);
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    transform: translateX(100%);
+    transition: 0.7s ease-in-out;
+}
+
+.open-nav{
+    transform: translateX(0%);
+    
+}
+
+
+nav li{
+    padding: 1.5em;
+    margin: 0 auto;
+    animation: slideInFromTop 1s ease-in;
+    text-align: center;
+}
+nav ul{
+    text-align: center;
+}
+
+nav a{
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    
+}
+nav a:hover{
+    font-weight: bold;
+    
+}
+
+.log{
+
+    float: right;
+    margin: 1.5em;
+    
+
+}
+
+
+
+
+.nav-menu{
+    margin-top: 2.5em;
+}
+.download-btn{
+    height: 30px;
+    width: 200px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #0e04043f;
+    cursor: pointer;
+    
+}
+.download-btn:hover{
+   transform: scaleX(0.95);
+}
+
+.download-btn a{
+    color: blue;
+}
+
+
+
+
+/* HERO */
+
+.hero{
+    background-image: url("/images/header-bg.svg");  
+    background-position-x: 0px;
+    background-position-y: 0px ;
+    background-size: cover;
+    height: 100%;
+    
+    
+}
+
+.header-left{
+    padding: 1em;
+    animation: introLoad 1s ease-in;
+    
+}
+
+.header-left h2{
+    color: rgb(244, 247, 245);
+    font-size: 2.5rem;
+    margin-top: 3.5em;
+}
+
+.header-left p{
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    margin-top: 1.2em;
+    line-height: 1.5;
+}
+
+
+.start-btn{
+    background: transparent;
+    color: aliceblue;
+    border: 2px solid rgb(62, 138, 189);
+    width: 15rem;
+    height: 50px;
+    box-shadow: 1rem 1rem 1rem rgba(63, 90, 214, 0.2);;
+    margin-top: 1.2em;
+    border-radius: 10px;
+}
+.start-btn:hover{
+    background: rgb(7, 192, 238);
+    color: rgb(226, 235, 243);
+    border: none;
+    transform: scaleX(0.96);
+}
+
+
+
+
+
+.header-right{
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    animation: slideInFromRight 1s ease-in;
+
+}
+.header-right img{
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+   
+
+}
+
+
+
+
+/* BENEFITS */
+
+
+.hero-2{
+    text-align: center;
+    margin: 1.5em;
+    
+}
+
+
+
+.main-benefit{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2em;
+}
+.benefit{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    line-height: 2rem;
+    margin: 1.5em;
+    border-radius: 10px;
+    animation: slideInFromRight 1s ease-in;
+    box-shadow: 1rem 1rem 1rem 1rem rgba(174, 184, 230, 0.2);
+}
+
+
+#download-btn{
+    font-size: 16px;
+    font-weight: 400;
+    background-color: blue; 
+    color: azure;
+    width: 90%;
+    height: 50px;
+    border: none;
+    margin-top: 5em;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem rgba(63, 90, 214, 0.2);;
+    text-align: center;
+    justify-content: center;
+    background-image: linear-gradient( 180deg,rgb(63, 92, 241), rgb(9, 40, 122));
+    margin: auto;
+    
+}
+
+
+#download-btn:hover{
+    background-image: linear-gradient( rgb(74, 97, 214), rgb(3, 20, 68));
+    transform: scaleX(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+/* HERO-3 */
+
+
+.hero-3{
+   
+    margin: 4.5em 2.5em;
+}
+
+
+.example h2{
+    font-size: 2rem;
+    text-align: center;
+    animation: slideInFromTop 2s ease-in;
+}
+
+.example p{
+    margin-top: 1.5em;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+.trybt{
+    margin-top: 1.5em;
+    text-align: center;
+}
+.trybt button{
+    padding: 1em;
+    width: 15rem;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: blue; 
+    text-align: center;
+    color: azure;
+    height: 60px;
+    border: none;
+    box-shadow: 1rem 1rem 1rem rgba(63, 90, 214, 0.2);;
+    border-radius: 5px;    
+    background-image: linear-gradient( 180deg,rgb(41, 73, 233), rgb(9, 40, 122));
+  
+}
+
+
+
+.try-btn:hover{
+    background-image: linear-gradient( rgb(74, 97, 214), rgb(3, 20, 68));
+    transform: scaleX(0.95);
+}
+
+
+
+/* HERO-4 */
+
+.hero-4{
+   
+    margin: 4.5em 1.5em;
+}
+
+.hero-4 h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.uses img{
+    width: 80%;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.secure{
+    background-color: rgba(228, 228, 240, 0.753);
+    padding: 1.5em;
+    border-radius: 10px;
+    position: relative;
+    text-align: start;
+    margin: auto;
+    animation: slideInFromLeft 1s ease-in;
+    
+}
+
+.secure img{
+    width: 60%;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.secure h2{
+
+    font-size: 2rem;
+    margin-bottom: 1em;
+   
+}
+
+.secure p{
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+
+
+
+.secure::before{
+   
+    content: '';
+    position: absolute;
+    /* top: -1.2rem; */
+    top: -9.3rem;
+    height: 0;
+    width: 0;
+    border: 50px solid transparent;
+    border-bottom: 100px solid  rgba(226, 226, 235, 0.74);
+    
+}
+
+.bttn{
+    text-align: center;
+}
+
+#secure-btn{
+   
+    text-align: center;  
+    font-size: 16px;
+    font-weight: 400;
+    background-color: blue; 
+    text-align: center;
+    color: azure;
+    width: 50%;
+    height: 60px;
+    border: none;
+    margin-top: 5em;
+    box-shadow: 1rem 1rem 1rem rgba(63, 90, 214, 0.2);;
+    border-radius: 5px;    
+    background-image: linear-gradient( 180deg,rgb(41, 73, 233), rgb(9, 40, 122));
+  
+
+}
+
+#secure-btn:hover{
+    background-image: linear-gradient( rgb(74, 97, 214), rgb(3, 20, 68));
+    transform: scaleX(0.95);
+}
+
+
+
+/* HER0-5 */
+
+.crypto{
+    margin: 1.7em;
+    line-height: 1.5;
+    
+}
+
+.crypto-desc{
+    background-color: rgba(228, 228, 240, 0.753);
+    padding: 1.5em;
+    margin: 1.5em;
+    border-radius: 10px;
+    position: relative;
+    animation: slideInFromTop 1s ease-in;
+    
+}
+.crypto img{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.crypto-desc h2{
+
+    font-size: 2em;
+
+}
+
+.crypto-desc::before{
+   
+    content: '';
+    position: absolute;
+    /* top: -1.2rem; */
+    bottom: -9.3rem;
+    height: 0;
+    width: 0;
+    border: 50px solid transparent;
+    border-bottom: 100px solid  rgba(226, 226, 235, 0.74);
+    transform: rotate(180deg); 
+    
+   
+}
+
+#try-it-btn{
+    font-size: 16px;
+    font-weight: 400;
+    background-color: blue; 
+    text-align: center;
+    color: azure;
+    width: 50%;
+    height: 60px;
+    border: none;
+    margin-top: 2em ;
+    box-shadow: 1rem 1rem 1rem rgba(63, 90, 214, 0.2);;
+    margin-bottom: 2em;
+    border-radius: 5px;    
+    background-image: linear-gradient( 180deg,rgb(41, 73, 233), rgb(9, 40, 122));
+  
+
+}
+
+#try-it-btn:hover{
+    background-image: linear-gradient( rgb(74, 97, 214), rgb(3, 20, 68));
+    transform: scaleX(0.95);
+}
+
+
+
+/* HER0-6 */
+
+.protect{
+    margin: 1.5em;
+
+    line-height: 1.5;
+    
+}
+
+.protect-desc{
+    background-color: rgba(228, 228, 240, 0.753);
+    padding: 1.5em;
+    margin: 1.5em;
+    border-radius: 10px;
+    position: relative;
+    animation: slideInFromLeft 1s ease-in;
+   
+    
+}
+.protect img{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.protect-desc h2{
+
+    font-size: 2em;
+
+}
+
+.protect-desc::before{
+   
+    content: '';
+    position: absolute;
+    /* top: -1.2rem; */
+    top: -9.3rem;
+    height: 0;
+    width: 0;
+    border: 50px solid transparent;
+    border-bottom: 100px solid  rgba(226, 226, 235, 0.74);
+    
+}
+
+#protect-btn{
+    font-size: 16px;
+    font-weight: 400;
+    background-color: blue; 
+    text-align: center;
+    color: azure;
+    width: 50%;
+    height: 60px;
+    border: none;
+    margin-top: 2em ;
+    box-shadow: 1rem 1rem 1rem rgba(63, 90, 214, 0.2);;
+    margin-bottom: 2em;
+    border-radius: 5px;    
+    background-image: linear-gradient( 180deg,rgb(41, 73, 233), rgb(9, 40, 122));
+  
+
+}
+
+#protect-btn:hover{
+    background-image: linear-gradient( rgb(74, 97, 214), rgb(3, 20, 68));
+    transform: scaleX(0.95);
+}
+
+
+/* HERO-7 */
+
+
+
+.messages img{
+    width: 25%;
+    object-fit: contain;
+    margin: 1em;
+    animation: slideInFromTop 1s ease-in;
+}
+
+.message-1{
+    display: flex;
+    justify-content: space-between;
+    
+    margin: 1em;
+    animation: slideInFromRight 1s ease-in;
+}
+.message-1-desc{
+    display: inline-block;
+    line-height: 1.5;
+    background-color: rgb(239, 241, 243);
+    box-shadow: 1rem 1rem 1rem rgba(103, 112, 150, 0.2);;
+    padding: 1em;
+    margin: 1.2em;
+    border-radius: 1em;
+    font-size: 20px;
+    width: 90%;
+    
+}
+
+
+
+
+.message-2-desc{
+    display: inline-block;
+    line-height: 1.5;
+    background-color: rgb(170, 223, 173);
+    box-shadow: 1rem 1rem 1rem rgba(103, 112, 150, 0.2);;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 1em;
+    font-size: 20px;
+    width: 90%;
+    
+}
+
+
+.mesbt{
+    text-align: center;
+}
+.mesbt button{
+    padding: 1em;
+    width: 15rem;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: blue; 
+    text-align: center;
+    color: azure;
+    height: 60px;
+    border: none;
+    box-shadow: 1rem 1rem 1rem rgba(63, 90, 214, 0.2);;
+    border-radius: 5px;    
+    background-image: linear-gradient( 180deg,rgb(41, 73, 233), rgb(9, 40, 122));
+  
+}
+
+
+.mesbt button:hover{
+    background-image: linear-gradient( rgb(74, 97, 214), rgb(3, 20, 68));
+    transform: scaleX(0.95);
+}
+
+
+
+
+/* possibilities */
+
+
+.possibilities{
+    text-align: center;
+    margin: 2em;
+    padding: 1em;
+
+}
+.possibilities h2{
+    font-size: 2rem;
+    color: rgb(32, 31, 31);
+}
+
+.possible img{
+ 
+    width: 50%;
+    margin: 1.5em;
+    animation: slideInFromTop 1s ease-in;
+}
+
+.possible h3{
+    font-size: 1.5em;
+}
+.possible p{
+    margin: 1.3em;
+    line-height: 1.5;
+}
+.possible button{
+    padding: 1em;
+    
+    width: 60%;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: blue; 
+    text-align: center;
+    color: azure;
+    height: 100%;
+    box-shadow: 1rem 1rem 1rem rgba(63, 90, 214, 0.2);;
+    border: none;
+    border-radius: 5px;    
+    background-image: linear-gradient( 180deg,rgb(41, 73, 233), rgb(9, 40, 122));
+  
+}
+
+.possible button:hover{
+    background-image: linear-gradient( rgb(74, 97, 214), rgb(3, 20, 68));
+    transform: scaleX(0.95);
+}
+
+
+
+/* USERS */
+
+
+.users{
+    padding: 1.5em;
+    margin: 4.5em;
+    text-align: center;
+    display: grid;
+    gap: 4rem;
+    border-radius: 10px;
+    box-shadow: 5rem 5rem 5rem  rgba(185, 198, 255, 0.164);;
+    
+    
+}
+
+.users h2{
+    color: rgb(5, 3, 97);
+    font-weight: bold;
+    font-size: 2.5em!important;
+    margin: 10px;
+    animation: slideInFromTop 1s ease-in;
+}
+
+
+.users p{
+    margin-bottom: 1em;
+    animation: slideInFromRight 1s ease-in;
+}
+
+.use {
+    margin-bottom: 50px;
+   border-bottom: 1px solid  rgba(127, 127, 240, 0.199);
+
+}
+
+
+/* user-rating */
+.user-rating{
+    background-color: rgba(217, 217, 243, 0.425);
+    text-align: center;
+    
+}
+
+
+.user-rating h2{
+    padding: 1.5em;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 1.5em;
+   
+}
+
+
+.user-rating img{
+    width: 50%;
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.212) ;
+    animation: slideInFromTop 1s ease-in;
+}
+
+
+.rating{
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 1.5em;
+    
+    height: 12rem;
+}
+
+
+
+
+/* PROTECTION */
+.protection{
+    margin: 1.5em;
+}
+.protection img{
+    display: inline-block;
+    width: 80%;
+    margin-top: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    animation: introLoad 1s ease-in;
+}
+
+.protection h2{
+    font-size: 2.5rem;
+}
+
+.protection p{
+    line-height: 1.6;
+}
+
+.protection button{
+    padding: 1em;
+    margin-top: 1.5em;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: blue; 
+    text-align: center;
+    color: azure;
+    height: 100%;
+    box-shadow: 1rem 1rem 1rem rgba(63, 90, 214, 0.2);;
+    border: none;
+    border-radius: 5px;    
+    background-image: linear-gradient( 180deg,rgb(41, 73, 233), rgb(9, 40, 122));
+  
+}
+
+.protection button:hover{
+    background-image: linear-gradient( rgb(74, 97, 214), rgb(3, 20, 68));
+    transform: scaleX(0.95);
+}
+
+
+
+
+/* ANIMATION */
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translatex(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes introLoad{
+    from{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+
+
+
